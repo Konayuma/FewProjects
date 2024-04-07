@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "CodeAlpha_Project_Name",
+			"path": "../CodeAlpha_Project_Name"
+		},
+		{
+			"name": "ExpenseTracker",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
