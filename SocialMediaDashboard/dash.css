@@ -1,0 +1,123 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #555;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    padding: 20px;
+  }
+  
+  main section {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  main section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  main section ul {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  main section ul li {
+    margin-bottom: 10px;
+  }
+  
+  main section button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  main section button:hover {
+    background-color: #555;
+  }
+  
+  /* Style the feed section */
+  #feed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  #feed .post {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #feed .post img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #feed .post h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #feed .post p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }

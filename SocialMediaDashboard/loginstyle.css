@@ -1,0 +1,104 @@
+/* Reset styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  main section {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  main section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  main section form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  
+  main section label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  main section input[type="text"],
+  main section input[type="email"],
+  main section input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  main section button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  
+  main section button:hover {
+    background-color: #555;
+  }
+  
+  main section p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  main section a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  footer p {
+    font-size: 1.2rem;
+  }
