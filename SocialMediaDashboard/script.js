@@ -25,12 +25,3 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       alert('Invalid username or email.');
     }
 });
-
-window.onload = function() {
-    var username = localStorage.getItem('username'); // Get the username from local storage
-
-    // If the username exists, display the welcome message
-    if (username) {
-        document.getElementById('welcome-message').textContent = 'Welcome ' + username;
-    }
-};
