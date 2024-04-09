@@ -1,124 +1,241 @@
-/* Reset styles for all elements */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-    margin-right: 20px;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  header nav ul li {
-    margin-right: 20px;
-  }
-  
-  header nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  
-  header nav ul li a:hover {
-    background-color: #555;
-  }
-  
-  /* Style the main section */
-  main {
-    display: flex;
-    padding: 20px;
-  }
-  
-  main section {
-    flex: 1;
-    margin-right: 20px;
-  }
-  
-  main section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  main section ul {
-    list-style: none;
-    margin-bottom: 20px;
-  }
-  
-  main section ul li {
-    margin-bottom: 10px;
-  }
-  
-  main section button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  
-  main section button:hover {
-    background-color: #555;
-  }
-  
-  /* Style the feed section */
-  #feed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
-  
-  #feed .post {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #feed .post img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  #feed .post h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  #feed .post p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 20px;
-  }
+.frame-1,
+.frame-1 * {
+  box-sizing: border-box;
+}
+.frame-1 {
+  background: #ffffff;
+  height: 720px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-2 {
+  background: #ffffff;
+  width: 1280px;
+  height: 163px;
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  overflow: hidden;
+}
+.social-media-dashboard {
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  left: 40px;
+  top: 49px;
+  width: 373px;
+  height: 96px;
+}
+.social-media-dashboard-span {
+  color: rgba(0, 0, 0, 0.66);
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.social-media-dashboard-span2 {
+  color: rgba(254, 229, 0, 0.61);
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.feed {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  left: 601px;
+  top: 46px;
+  width: 165px;
+  height: 61px;
+}
+.messages {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  left: 766px;
+  top: 46px;
+  width: 193px;
+  height: 61px;
+}
+.notifications {
+  color: rgba(0, 0, 0, 0.66);
+  text-align: center;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  left: 959px;
+  top: 47px;
+  width: 246px;
+  height: 58px;
+}
+.frame-4 {
+  width: 244px;
+  height: 190px;
+  position: absolute;
+  left: 274px;
+  top: 276px;
+  overflow: hidden;
+}
+.frame-6 {
+  background: #ffffff;
+  width: 1280px;
+  height: 555px;
+  position: absolute;
+  left: 0px;
+  top: 163px;
+  overflow: hidden;
+}
+.frame-8 {
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 198px;
+  height: 130px;
+  position: absolute;
+  left: 4px;
+  top: 140px;
+  overflow: hidden;
+}
+.frame-62 {
+  width: 1280px;
+  height: 557px;
+  position: absolute;
+  left: 0px;
+  top: 163px;
+  overflow: hidden;
+}
+.social-icons {
+  width: 70px;
+  height: 66.56px;
+  position: absolute;
+  left: 64px;
+  top: 31px;
+  overflow: visible;
+}
+.frame-9 {
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 196px;
+  height: 130px;
+  position: absolute;
+  left: 5px;
+  top: 421px;
+  overflow: hidden;
+}
+.social-icons2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  overflow: visible;
+}
+.frame-82 {
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 196px;
+  height: 140px;
+  position: absolute;
+  left: 5px;
+  top: 275px;
+  overflow: hidden;
+}
+.social-icons3 {
+  width: 72.33px;
+  height: 70px;
+  position: absolute;
+  left: 62px;
+  top: 35px;
+  overflow: visible;
+}
+.frame-10 {
+  width: 1053px;
+  height: 544px;
+  position: absolute;
+  left: 227px;
+  top: 3px;
+  overflow: hidden;
+}
+.frame-83 {
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 1033px;
+  height: 544px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.analytics-rafiki-1-1 {
+  width: 417px;
+  height: 417px;
+  position: absolute;
+  left: 517px;
+  top: 63px;
+  object-fit: cover;
+}
+.explore-a-dynamic-space-designed-to-elevate-your-digital-experience-from-curated-content-to-tailored-networking-opportunities-we-re-committed-to-facilitating-meaningful-connections-and-fostering-professional-growth {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Light", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  position: absolute;
+  left: 74px;
+  top: 205px;
+  width: 443px;
+  height: 183px;
+}
+.manage-your-social-media-accounts-with-ease {
+  text-align: left;
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  position: absolute;
+  left: 74px;
+  top: 63px;
+  width: 465px;
+  height: 176px;
+}
+.manage-your-social-media-accounts-with-ease-span {
+  color: rgba(0, 0, 0, 0.66);
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.manage-your-social-media-accounts-with-ease-span2 {
+  color: rgba(254, 229, 0, 0.61);
+  font-family: "Inter-ExtraBold", sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+}
+.group-1 {
+  position: absolute;
+  inset: 0;
+}
+.frame-7 {
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 192px;
+  height: 130px;
+  position: absolute;
+  left: 5px;
+  top: 168px;
+  overflow: hidden;
+}
+.social-icons4 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 61px;
+  top: 26px;
+  overflow: visible;
+}
+a
