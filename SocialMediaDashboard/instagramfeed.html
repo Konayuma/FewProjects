@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Feed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fafafa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .top-bar img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .top-bar-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .top-bar-icons div {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .stories-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stories {
+      display: flex;
+      padding-bottom: 10px;
+      animation: scroll 20s linear infinite;
+    }
+
+    .story {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 2px solid #dbdbdb;
+      padding: 2px; /* Adjust padding as needed */
+    }
+
+    .story img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .post {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: bold;
+    }
+
+    .post-image {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .post-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .action-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .action-icons > div {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .save-icon {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <img src="instagramlogo.png" alt="Instagram Logo">
+      <div class="top-bar-icons">
+        <div class="heart-icon">❤️</div>
+        <div class="messages-icon">💬</div>
+      </div>
+    </div>
+
+    <!-- Stories Section -->
+    <div class="stories-wrapper">
+      <div class="stories">
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <div class="story"><img src="https://via.placeholder.com/60" alt="Story"></div>
+        <!-- Add more stories here -->
+      </div>
+    </div>
+
+    <!-- Feed Section -->
+    <div class="feed">
+      <div class="post">
+        <div class="post-header">
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+          <div class="username">john_doe</div>
+        </div>
+        <img src="https://via.placeholder.com/600x400" alt="Post Image" class="post-image">
+        <div class="post-actions">
+          <div class="action-icons">
+            <div class="like-icon">❤️</div>
+            <div class="comment-icon">💬</div>
+            <div class="share-icon">↗️</div>
+          </div>
+          <div class="save-icon">💾</div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+          <div class="username">jane_smith</div>
+        </div>
+        <img src="https://via.placeholder.com/600x400" alt="Post Image" class="post-image">
+        <div class="post-actions">
+          <div class="action-icons">
+            <div class="like-icon">❤️</div>
+            <div class="comment-icon">💬</div>
+            <div class="share-icon">↗️</div>
+          </div>
+          <div class="save-icon">💾</div>
+        </div>
+      </div>
+
+      <!-- More posts can be added here -->
+    </div>
+  </div>
+</body>
+</html>
