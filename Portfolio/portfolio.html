@@ -237,12 +237,12 @@
                   background-color:rgb(217.0000022649765, 217.0000022649765, 217.0000022649765); background-blend-mode:NORMAL; opacity:1; border-width:1px; border-color:rgb(0, 0, 0); 
                   border-style:SOLID;opacity:1; text-transform:none; font-size:40px; font-weight:400; letter-spacing:0em; text-align:LEFT; text-align-vertical:TOP; resize:vertical; text-decoration:none; font-family: 'freemono', sans-serif;">
                </div>
-               <div
+               <div id="typed-text"
                   style="position:absolute; left:149.145751953125px; top:230.4276428222656px; width:545px; height:44px; box-sizing:border-box; color:rgb(0, 0, 0);
                   background-blend-mode:NORMAL; opacity:1; text-transform:none; font-size:40px; font-weight:400; letter-spacing:0em; text-align:LEFT; text-align-vertical:TOP; resize:vertical; text-decoration:none; font-family: 'freemono', sans-serif;">
                   SOFTWARE ENGINEER 
                </div>
-               <div
+               <div id="typed-text"
                   style="position:absolute; left:149.145751953125px; top:291.4276428222656px; width:545px; height:44px; box-sizing:border-box; color:rgb(0, 0, 0);
                   background-blend-mode:NORMAL; opacity:1; text-transform:none; font-size:40px; font-weight:400; letter-spacing:0em; text-align:LEFT; text-align-vertical:TOP; resize:vertical; text-decoration:none; font-family: 'freemono', sans-serif;">
                   WEB DEVELOPER 
@@ -261,5 +261,34 @@
             </div>
          </div>
       </div>
-   </body>
+      <style>
+         #typed-text {
+            position: absolute;
+            left: 149.145751953125px;
+            top: 230.4276428222656px;
+            width: 545px;
+            height: 44px;
+            color: rgb(0, 0, 0);
+            background-blend-mode: NORMAL;
+            opacity: 1;
+            text-transform: none;
+            font-size: 40px;
+            font-weight: 400;
+            letter-spacing: 0em;
+            text-align: left;
+            text-align-vertical: top;
+            resize: vertical;
+            text-decoration: none;
+            font-family: 'freemono', sans-serif;
+            white-space: nowrap; /* Prevents line breaks */
+            overflow: hidden; /* Hides overflowing characters */
+            border-right: 2px solid; /* Simulates cursor */
+            animation: typing 3s steps(30) infinite; /* Typing animation */
+         }
+   
+         @keyframes typing {
+            from { width: 0 }
+         }
+      </style>
+         
 </html>
