@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Feed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f2ef;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 100px;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+    }
+
+    .search-bar input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+    }
+
+    .post-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .user-info {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0073b1;
+    }
+
+    .post-content {
+      margin-bottom: 10px;
+    }
+
+    .post-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #666;
+      font-size: 16px;
+      border-top: 1px solid #e1e9ee;
+      padding-top: 15px;
+    }
+
+    .action-icon {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .post-image {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .status-update {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .update-bar {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .media-button, .event-button, .article-button {
+      margin-left: auto;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="linkedin_logo.png" alt="LinkedIn Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img src="home_icon.png" alt="Home">
+        </div>
+        <div class="icon">
+          <img src="network_icon.png" alt="My Network">
+        </div>
+        <div class="icon">
+          <img src="jobs_icon.png" alt="Jobs">
+        </div>
+        <div class="icon">
+          <img src="messages_icon.png" alt="Messages">
+        </div>
+        <div class="icon">
+          <img src="notifications_icon.png" alt="Notifications">
+        </div>
+        <div class="icon">
+          <img src="user_avatar.png" alt="User Avatar" class="user-avatar">
+        </div>
+      </div>
+    </div>
+
+    <div class="status-update">
+      <div class="update-bar">
+        <img src="user_avatar.png" alt="User Avatar" class="user-avatar">
+        <input type="text" placeholder="What's on your mind?">
+        <div class="media-button">Media</div>
+        <div class="event-button">Event</div>
+        <div class="article-button">Write Article</div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="https://via.placeholder.com/56" alt="User Avatar" class="user-avatar">
+        <div class="user-info">John Doe</div>
+      </div>
+      <div class="post-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+      <img src="https://via.placeholder.com/800x400" alt="Post Image" class="post-image">
+      <div class="post-actions">
+        <div class="action-icon">Like</div>
+        <div class="action-icon">Comment</div>
+        <div class="action-icon">Repost</div>
+        <div class="action-icon">Share</div>
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="post-header">
+        <img src="https://via.placeholder.com/56" alt="User Avatar" class="user-avatar">
+        <div class="user-info">Jane Smith</div>
+      </div>
+      <div class="post-content">
+        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus.</p>
+      </div>
+      <div class="post-actions">
+        <div class="action-icon">Like</div>
+        <div class="action-icon">Comment</div>
+        <div class="action-icon">Repost</div>
+        <div class="action-icon">Share</div>
+      </div>
+    </div>
+
+    <!-- More posts can be added here -->
+  </div>
+</body>
+</html>

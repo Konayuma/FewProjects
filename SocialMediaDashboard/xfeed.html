@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Feed - Dark Mode</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #15202b;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .tweet {
+      border: 1px solid #37444d;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: #192734;
+      padding: 10px;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .tweet-content {
+      margin-top: 10px;
+      color: #ffffff;
+    }
+
+    .tweet-actions {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .action-button {
+      cursor: pointer;
+      color: #8899a6;
+    }
+
+    .action-button:hover {
+      color: #1da1f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="tweet">
+      <div class="user-info">
+        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <div class="username">John Doe</div>
+      </div>
+      <div class="tweet-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+      </div>
+      <div class="tweet-actions">
+        <div class="action-button">Comment</div>
+        <div class="action-button">Retweet</div>
+        <div class="action-button">Like</div>
+      </div>
+    </div>
+
+    <div class="tweet">
+      <div class="user-info">
+        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <div class="username">Jane Smith</div>
+      </div>
+      <div class="tweet-content">
+        Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+      </div>
+      <div class="tweet-actions">
+        <div class="action-button">Comment</div>
+        <div class="action-button">Retweet</div>
+        <div class="action-button">Like</div>
+      </div>
+    </div>
+
+    <!-- More tweets can be added here -->
+  </div>
+</body>
+</html>

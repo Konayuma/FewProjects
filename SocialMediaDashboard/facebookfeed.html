@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Feed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      background-color: #3b5998;
+      color: #fff;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search-bar {
+      padding: 8px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+    }
+
+    .search-bar:focus {
+      background-color: #fff;
+    }
+
+    .search-icon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .feed-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .user-name {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    .post-time {
+      color: #999;
+    }
+
+    .post-content {
+      margin-bottom: 10px;
+    }
+
+    .post-image {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .post-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #666;
+      font-size: 16px;
+      border-top: 1px solid #e9ebee;
+      padding-top: 10px;
+    }
+
+    .action-icon {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .stories {
+      display: flex;
+      overflow-x: auto;
+      margin-bottom: 20px;
+    }
+
+    .story {
+      width: 120px;
+      height: 160px;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-right: 10px;
+      overflow: hidden;
+    }
+
+    .story img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Facebook</div>
+      <input type="text" class="search-bar" placeholder="Search...">
+      <span class="search-icon">&#x1F50D;</span>
+    </div>
+
+    <div class="stories">
+      <div class="story">
+        <img src="https://via.placeholder.com/120x160" alt="Story">
+      </div>
+      <div class="story">
+        <img src="https://via.placeholder.com/120x160" alt="Story">
+      </div>
+      <div class="story">
+        <img src="https://via.placeholder.com/120x160" alt="Story">
+      </div>
+      <!-- Add more stories here -->
+    </div>
+
+    <div class="feed-item">
+      <div class="user-info">
+        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <div class="user-name">John Doe</div>
+        <div class="post-time">2 hours ago</div>
+      </div>
+      <div class="post-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+      <img src="https://via.placeholder.com/600x400" alt="Post Image" class="post-image">
+      <div class="post-actions">
+        <div class="action-icon">Like</div>
+        <div class="action-icon">Comment</div>
+        <div class="action-icon">Share</div>
+      </div>
+    </div>
+
+    <div class="feed-item">
+      <div class="user-info">
+        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <div class="user-name">Jane Smith</div>
+        <div class="post-time">1 day ago</div>
+      </div>
+      <div class="post-content">
+        <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus.</p>
+      </div>
+      <div class="post-actions">
+        <div class="action-icon">Like</div>
+        <div class="action-icon">Comment</div>
+        <div class="action-icon">Share</div>
+      </div>
+    </div>
+
+    <!-- More feed items can be added here -->
+  </div>
+</body>
+</html>
