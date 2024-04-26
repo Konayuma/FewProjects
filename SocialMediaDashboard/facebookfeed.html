@@ -105,19 +105,42 @@
     }
 
     .stories {
-      display: flex;
-      overflow-x: auto;
-      margin-bottom: 20px;
-    }
+  display: flex;
+  overflow-x: hidden; /* Hide the overflow to prevent scrollbar */
+  white-space: nowrap; /* Ensure the stories stay in a single line */
+  animation: scroll 20s linear infinite; /* Define the animation */
+  margin-bottom: 20px;
+}
 
-    .story {
-      width: 120px;
-      height: 160px;
-      background-color: #fff;
-      border-radius: 8px;
-      margin-right: 10px;
-      overflow: hidden;
-    }
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from initial position */
+  }
+  100% {
+    transform: translateX(calc(-100% - 10px)); /* Move to the end of stories */
+  }
+}
+
+.story {
+  width: 120px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-right: 10px;
+  overflow: hidden;
+  flex-shrink: 0; /* Prevent stories from shrinking */
+  animation: slide 20s linear infinite; /* Define the animation */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Start from initial position */
+  }
+  100% {
+    transform: translateX(calc(100% + 10px)); /* Move to the end of container */
+  }
+}
+
 
     .story img {
       width: 100%;
@@ -136,27 +159,39 @@
 
     <div class="stories">
       <div class="story">
-        <img src="https://via.placeholder.com/120x160" alt="Story">
+        <img src="art3.jpg" alt="Story">
       </div>
       <div class="story">
-        <img src="https://via.placeholder.com/120x160" alt="Story">
+        <img src="art4.jpg" alt="Story">
       </div>
       <div class="story">
-        <img src="https://via.placeholder.com/120x160" alt="Story">
+        <img src="art5.jpg" alt="Story">
       </div>
+      <div class="story">
+        <img src="art6.jpg" alt="Story">
+      </div>
+      <div class="story">
+        <img src="art2.jpg" alt="Story">
+      </div>
+      <div class="story">
+        <img src="art2.jpg" alt="Story">
+      </div>
+      <div class="story">
+        <img src="art1.jpg" alt="Story">
+      </div>     
       <!-- Add more stories here -->
     </div>
 
     <div class="feed-item">
       <div class="user-info">
-        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <img src="pfp.png" alt="User Avatar" class="user-avatar">
         <div class="user-name">John Doe</div>
         <div class="post-time">2 hours ago</div>
       </div>
       <div class="post-content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <p>Art</p>
       </div>
-      <img src="https://via.placeholder.com/600x400" alt="Post Image" class="post-image">
+      <img src="art1.jpg" alt="Post Image" class="post-image">
       <div class="post-actions">
         <div class="action-icon">Like</div>
         <div class="action-icon">Comment</div>
@@ -166,7 +201,7 @@
 
     <div class="feed-item">
       <div class="user-info">
-        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
+        <img src="pfp.png" alt="User Avatar" class="user-avatar">
         <div class="user-name">Jane Smith</div>
         <div class="post-time">1 day ago</div>
       </div>

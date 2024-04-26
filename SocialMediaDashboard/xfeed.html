@@ -27,6 +27,11 @@
       padding: 10px;
     }
 
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+
     .user-avatar {
       width: 40px;
       height: 40px;
@@ -37,6 +42,11 @@
     .username {
       font-weight: bold;
       color: #ffffff;
+    }
+
+    .at-username {
+      color: #8899a6;
+      font-size: 14px;
     }
 
     .tweet-content {
@@ -58,14 +68,66 @@
     .action-button:hover {
       color: #1da1f2;
     }
+
+    .video-container {
+      margin-top: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .twitter-video {
+      width: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .twitter-video video {
+      width: 100%;
+      display: block;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #15202b;
+    }
+
+    .twitter-logo {
+      width: 30px;
+      height: auto;
+    }
+
+    .profile-icon {
+      width: 30px;
+      height: auto;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .settings-icon {
+      width: 30px;
+      height: auto;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
+  <div class="header">        
+    <img src="pfp.png" alt="Profile Icon" class="profile-icon">
+    <img src="xlogo.png" alt="Twitter Logo" class="twitter-logo">
+    <img src="settingsicon.png" alt="Settings Icon" class="settings-icon">
+  </div>
+
   <div class="container">
     <div class="tweet">
       <div class="user-info">
-        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
-        <div class="username">John Doe</div>
+        <img src="pfp.png" alt="User Avatar" class="user-avatar">
+        <div>
+          <div class="username">User</div>
+          <div class="at-username">@user</div>
+        </div>
       </div>
       <div class="tweet-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
@@ -79,8 +141,11 @@
 
     <div class="tweet">
       <div class="user-info">
-        <img src="https://via.placeholder.com/40" alt="User Avatar" class="user-avatar">
-        <div class="username">Jane Smith</div>
+        <img src="pfp.png" alt="User Avatar" class="user-avatar">
+        <div>
+          <div class="username">User</div>
+          <div class="at-username">@user</div>
+        </div>
       </div>
       <div class="tweet-content">
         Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
@@ -92,7 +157,33 @@
       </div>
     </div>
 
+    <div class="tweet">
+        <div class="user-info">
+          <img src="pfp.png" alt="User Avatar" class="user-avatar">
+          <div>
+            <div class="username">User</div>
+            <div class="at-username">@user</div>
+          </div>
+        </div>
+        <div class="tweet-content">
+            Looking for a Latin tutor.
+        </div>
+        <div class="tweet-actions">
+          <div class="action-button">Comment</div>
+          <div class="action-button">Retweet</div>
+          <div class="action-button">Like</div>
+        </div>
+      </div>
+       
+      <div class="video-container">
+        <div class="twitter-video">
+          <video controls poster="path_to_poster_image.jpg">
+            <source src="path_to_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     <!-- More tweets can be added here -->
-  </div>
+  </div>  
 </body>
 </html>
